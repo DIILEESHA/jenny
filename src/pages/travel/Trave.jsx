@@ -40,7 +40,7 @@ const Trave = () => {
         variants={fadeUpVariant}
       >
         <div className="detail_grid vv">
-          <motion.div className="detail_sub a f" variants={fadeUpVariant}>
+          <motion.div className="detail_sub a f bulsai" variants={fadeUpVariant}>
             <motion.div className="couple_section" variants={fadeUpVariant}>
               <h2 className="couple_name">Travel & Accommodations</h2>
 
