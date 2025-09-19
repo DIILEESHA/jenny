@@ -1,0 +1,35 @@
+.f {
+  height: 100vh!important;
+}
+
+.vv {
+  gap: 0!important;
+}
+
+.cc {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--cream);
+}
+.d_p {
+  font-family: "play";
+  width: 60%;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 150%;
+  font-size: 20px;
+}
+@media (max-width: 575.98px) {
+
+.f {
+  height: 60vh!important;
+}
+.d_p{
+  width: 80%;
+  font-size: 15px;
+}
+.cc{
+  padding: 20px;
+}
+
+}

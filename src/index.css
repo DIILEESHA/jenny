@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "play";
+  src: url("../public/fonts/playfair.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sym";
+  src: url("../public/fonts/sym.otf") format("truetype");
+  font-style: normal;
+}
+:root {
+  --cream: rgb(243, 240, 234);
+}
+.footer_title {
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  font-family: "play";
+  text-align: center;
+  padding: 15px;
+}
+@import "tailwindcss";

@@ -1,0 +1,141 @@
+.abo {
+  padding-top: 80px;
+  overflow: hidden;
+  /* background-color: var(--cream); */
+  /* text-align: center; */
+}
+
+.abo_grid::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  margin: 0 auto;
+}
+.abo_grid {
+  display: grid;
+  margin: 100px 0;
+  padding: 0px 200px;
+  gap: 50px;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+}
+
+.abo_sub {
+  /* display: flex; */
+  /* margin-bottom: 40px; */
+  /* flex-direction: column; */
+}
+.abo_img {
+  width: 80px;
+  object-fit: contain;
+}
+
+.abo_time {
+  font-size: 25px;
+  font-family: "sym";
+  font-family: "poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+.actual {
+  font-size: 20px;
+  font-family: "play";
+  color: #333;
+  opacity: 80%;
+  font-weight: 400;
+  font-weight: bold;
+}
+.ee {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  position: relative;
+}
+
+.ee::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-color: #333;
+  top: 0;
+  border-radius: 50%;
+  right: -35px;
+}
+
+.welcome_title {
+  text-align: center;
+}
+.bb {
+  position: relative;
+}
+.bb::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-color: #333;
+  top: 0;
+  border-radius: 50%;
+  left: -35px;
+}
+.halo {
+  padding: 10px 0px;
+
+  border-bottom: 1px solid #33333338;
+}
+
+.details_wrap {
+  background-color: var(--cream);
+  padding: 80px 200px;
+}
+
+.hp {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "play";
+  font-weight: bold;
+}
+
+.details_list {
+  margin-top: 10px;
+}
+.details_list li {
+  font-family: "play";
+  font-weight: bold;
+  line-height: 150%;
+  margin-bottom: 10px;
+  color: #333;
+  opacity: 90%;
+  list-style: circle;
+}
+
+@media (max-width: 575.98px) {
+  .abo_grid {
+    padding: 20px;
+    margin-top: 40px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 10px; */
+  }
+
+  .details_wrap {
+    padding: 20px;
+  }
+  .abo_grid::after {
+    /* margin-left: 20px; */
+  }
+
+  .o {
+    display: none;
+  }
+}
