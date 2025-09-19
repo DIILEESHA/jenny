@@ -5,6 +5,7 @@ import { Home } from "lucide-react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { saveRSVP } from "./firebaseConfig"; // adjust path if needed
+import { Link } from "react-router-dom";
 
 const initialState = {
   fullName: "",
@@ -37,7 +38,8 @@ export default function RSVPForm() {
   const validate = () => {
     const newErrors = {};
     if (!form.fullName.trim()) newErrors.fullName = "Full name is required.";
-    if (!form.attending) newErrors.attending = "Please tell us whether you'll attend.";
+    if (!form.attending)
+      newErrors.attending = "Please tell us whether you'll attend.";
 
     // If accepting, require at least one of these (example): time or contact not required.
     if (form.attending === "accept") {
@@ -108,7 +110,9 @@ export default function RSVPForm() {
       <div className="rsvp_wrap" aria-live="polite">
         <div className="homey">
           <div className="homeies">
-            <Home size={20} />
+            <Link to="/">
+              <Home size={20} />
+            </Link>
           </div>
           <div className="homeies">/</div>
           <div className="homeies">RSVP</div>
@@ -145,7 +149,11 @@ export default function RSVPForm() {
 
             {/* Attending */}
             <label className="label-playfair">Will you be attending?</label>
-            <fieldset className="radio_group" role="radiogroup" aria-required="true">
+            <fieldset
+              className="radio_group"
+              role="radiogroup"
+              aria-required="true"
+            >
               <label className="radio_label">
                 <input
                   type="radio"
@@ -166,7 +174,9 @@ export default function RSVPForm() {
                 />
                 Declines with regret
               </label>
-              {errors.attending && <div className="field_error">{errors.attending}</div>}
+              {errors.attending && (
+                <div className="field_error">{errors.attending}</div>
+              )}
             </fieldset>
 
             {/* If accepting: show all fields */}
@@ -268,8 +278,16 @@ export default function RSVPForm() {
             {isDeclining && (
               <>
                 <div style={{ gridColumn: "1 / -1" }}>
-                  <p style={{ margin: "0px 0 0", color: "red",fontSize:"14px", fontFamily: "Poppins, sans-serif" }}>
-                    We're sorry you can't join — please leave a message for the couple below*.
+                  <p
+                    style={{
+                      margin: "0px 0 0",
+                      color: "red",
+                      fontSize: "14px",
+                      fontFamily: "Poppins, sans-serif",
+                    }}
+                  >
+                    We're sorry you can't join — please leave a message for the
+                    couple below*.
                   </p>
                 </div>
               </>
@@ -294,7 +312,6 @@ export default function RSVPForm() {
             <button type="submit" className="rsvp_btn" disabled={isSaving}>
               {isSaving ? "Sending..." : "Send RSVP"}
             </button>
-            
           </div>
         </form>
       </div>

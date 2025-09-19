@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./nav.css";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-
+import jc from "../../assets/jc.png";
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,11 +23,7 @@ const Nav = () => {
     <div className={`nav ${scrolled ? "nav-scrolled" : ""}`}>
       <div className="nav_sub">
         <Link to="/" onClick={closeMenu}>
-          <img
-            src="https://i.imgur.com/5Svx08R.png"
-            alt="Logo"
-            className="nav_img"
-          />
+          <img src={jc} alt="Logo" className="nav_img" />
         </Link>
       </div>
       <div className="nav_sub">
@@ -65,7 +61,6 @@ const Nav = () => {
       {mobileMenuOpen && (
         <div className="mobile_menu_overlay">
           <ul className="mobile_nav_ul">
-           
             <li className="mobile_nav_li">
               <Link className="auu" to="/Wedding-details" onClick={closeMenu}>
                 Wedding Details
@@ -77,7 +72,6 @@ const Nav = () => {
               </Link>
             </li>
 
-           
             <li className="mobile_nav_li">
               <Link className="auu" to="/rsvp" onClick={closeMenu}>
                 Rsvp
