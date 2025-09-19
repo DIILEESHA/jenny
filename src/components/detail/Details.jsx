@@ -47,7 +47,11 @@ const Details = () => {
           </motion.div>
         </motion.div> */}
 
-        <motion.div className="detail_sub ham" variants={fadeUpVariant} transition={{ delay: 0.2 }}>
+        <motion.div
+          className="detail_sub ham"
+          variants={fadeUpVariant}
+          transition={{ delay: 0.2 }}
+        >
           <motion.div className="ham_sub dirt" variants={fadeUpVariant}>
             <img
               src="https://i.imgur.com/8ygwIhd.png"
@@ -59,7 +63,11 @@ const Details = () => {
             <div className="d_time">December 6, 2025</div>
           </motion.div>
 
-          <motion.div className="ham_sub dirts" variants={fadeUpVariant} transition={{ delay: 0.2 }}>
+          <motion.div
+            className="ham_sub dirts"
+            variants={fadeUpVariant}
+            transition={{ delay: 0.2 }}
+          >
             <img
               src="https://i.imgur.com/naGjprS.png"
               className="d_img"
@@ -67,14 +75,24 @@ const Details = () => {
             />
             <h2 className="d_title">venue</h2>
             <div className="timo">Harborview Restaurant &amp; Bar</div>
-            <div className="d_time">Get Direction</div>
+            <div className="d_time">
+              <a style={{textDecoration:"underline"}}
+                href="https://maps.app.goo.gl/yREG4kQaytd97yt29"
+                target="_blank"
+              >
+                Get Direction
+              </a>
+            </div>
           </motion.div>
         </motion.div>
 
-        <motion.div className="jk" variants={fadeUpVariant} transition={{ delay: 0.4 }}>
-
-          <Link  to="/Wedding-details">
-          <button className="rsvp_btn">see full details</button>
+        <motion.div
+          className="jk"
+          variants={fadeUpVariant}
+          transition={{ delay: 0.4 }}
+        >
+          <Link to="/Wedding-details">
+            <button className="rsvp_btn">see full details</button>
           </Link>
         </motion.div>
       </div>

@@ -46,9 +46,9 @@ const Am = () => {
         <h2 className="welcome_title">Hotel Accommodations</h2>
         <p className="welocome_p">
           We’re delighted to have reserved a block of rooms at the Hyatt Regency
-          San Francisco, located just steps away from our wedding venue.
-          Staying here means you’ll be right in the heart of the celebration,
-          with the city’s charm at your doorstep.
+          San Francisco, located just steps away from our wedding venue. Staying
+          here means you’ll be right in the heart of the celebration, with the
+          city’s charm at your doorstep.
         </p>
 
         <div className="am_grid">
@@ -73,6 +73,13 @@ const Am = () => {
               <p className="hotel_title">
                 <p className="pp">(415) 788-1234</p>
               </p>
+
+              <a
+                href="https://maps.app.goo.gl/SiHm9vscYKmdYj4j9"
+                target="_blank"
+              >
+                <button className="rsvp_btn">get location</button>
+              </a>
             </div>
 
             <br />
@@ -163,7 +170,9 @@ const Am = () => {
           </AccordionItem>
 
           <AccordionItem className="halo" value="things-to-do">
-            <AccordionTrigger className="hp">Things to Do Nearby</AccordionTrigger>
+            <AccordionTrigger className="hp">
+              Things to Do Nearby
+            </AccordionTrigger>
             <AccordionContent>
               <ul className="details_list">
                 <li>
@@ -178,8 +187,8 @@ const Am = () => {
                   fun (don’t miss the clam chowder in a sourdough bowl).
                 </li>
                 <li>
-                  Make a weekend of it — these spots are just steps away from the
-                  hotel and venue.
+                  Make a weekend of it — these spots are just steps away from
+                  the hotel and venue.
                 </li>
               </ul>
             </AccordionContent>

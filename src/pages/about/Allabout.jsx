@@ -83,7 +83,16 @@ const Allabout = () => {
               />
               <h2 className="d_title">venue</h2>
               <div className="timo">Harborview Restaurant &amp; Bar</div>
-              <div className="d_time">Get Direction</div>
+              <div className="d_time">
+                {" "}
+                <a
+                  style={{ textDecoration: "underline" }}
+                  href="https://maps.app.goo.gl/yREG4kQaytd97yt29"
+                  target="_blank"
+                >
+                  Get Direction
+                </a>
+              </div>
             </motion.div>
           </motion.div>
         </div>
