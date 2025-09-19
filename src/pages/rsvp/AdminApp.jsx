@@ -7,7 +7,7 @@ import AdminDashboard from "./AdminDashboard";
 const { Content } = Layout;
 const { Title } = Typography;
 
-const DUMMY_PASSWORD = "Jenny25"; // client-side dummy password
+const DUMMY_PASSWORD = "Jenny25"; 
 
 export default function AdminApp() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -23,7 +23,6 @@ export default function AdminApp() {
       sessionStorage.setItem("rsvp_admin_authed", "true");
       setLoggedIn(true);
     } else {
-      // simple client-side feedback
       alert("Incorrect password.");
     }
   };
