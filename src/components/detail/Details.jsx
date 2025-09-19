@@ -1,6 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import "./d.css";
+import { Link } from "react-router-dom";
 
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 30 },
@@ -71,7 +72,10 @@ const Details = () => {
         </motion.div>
 
         <motion.div className="jk" variants={fadeUpVariant} transition={{ delay: 0.4 }}>
+
+          <Link  to="/Wedding-details">
           <button className="rsvp_btn">see full details</button>
+          </Link>
         </motion.div>
       </div>
     </motion.div>
