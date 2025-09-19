@@ -1,0 +1,54 @@
+.am_grid {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+}
+
+.am_img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cty {
+  padding: 10px;
+}
+.hotel_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hotel_title,
+.hotel_phone,
+.hotel_note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.dalsi {
+  font-family: "sym";
+  font-size: 50px;
+  
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pp {
+  text-align: left;
+  font-family: "play";
+  font-weight: bold;
+  color: #333;
+  /* opacity: 90%; */
+}
+
+.am_sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon {
+  /* width: 40px; */
+}

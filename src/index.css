@@ -27,4 +27,20 @@
   text-align: center;
   padding: 15px;
 }
-@import "tailwindcss";
+@import "tailwindcss"; /* src/admin/admin.css */
+.ant-layout-header {
+  background: #fff;
+}
+@media (max-width: 880px) {
+  .ant-select,
+  .ant-input {
+    width: 100% !important;
+  }
+
+  .pol {
+    display: none;
+  }
+  .ant-table {
+    font-size: 13px;
+  }
+}

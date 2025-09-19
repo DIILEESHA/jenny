@@ -10,8 +10,10 @@
   font-family: "sym";
 }
 
+
 .welocome_p {
   font-weight: bold;
+  text-align: center;
   color: #333;
   opacity: 80%;
   font-size: 16px;

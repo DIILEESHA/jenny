@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "./h.css";
+import Nav from "../nav/Nav";
 
 const containerVariant = {
   initial: {},
@@ -23,26 +24,28 @@ const bgFadeVariant = {
 
 const Headre = () => {
   return (
-    <motion.div
-      className="h"
-      initial="initial"
-      animate="animate"
-      variants={containerVariant}
-    >
-      {/* Animated fading background overlay */}
-      <motion.div className="header_background" variants={bgFadeVariant} />
+    <div>
+      <motion.div
+        className="h"
+        initial="initial"
+        animate="animate"
+        variants={containerVariant}
+      >
+        {/* Animated fading background overlay */}
+        <motion.div className="header_background" variants={bgFadeVariant} />
 
-      <motion.div className="header_container" variants={containerVariant}>
-        <motion.div className="couple_section" variants={containerVariant}>
-          <motion.h2 className="couple_name" variants={textFadeSlide}>
-            Jenny Yu &amp; John Jaejoon Cho
-          </motion.h2>
-          <motion.p className="located" variants={textFadeSlide}>
-            December 6, 2025 | San Francisco, CA
-          </motion.p>
+        <motion.div className="header_container" variants={containerVariant}>
+          <motion.div className="couple_section" variants={containerVariant}>
+            <motion.h2 className="couple_name" variants={textFadeSlide}>
+              Jenny Yu &amp; John Jaejoon Cho
+            </motion.h2>
+            <motion.p className="located" variants={textFadeSlide}>
+              December 6, 2025 | San Francisco, CA
+            </motion.p>
+          </motion.div>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 

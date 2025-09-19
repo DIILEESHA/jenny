@@ -50,7 +50,7 @@
 .h::after {
   content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: -100px;
   left: 0;
   background: linear-gradient(
     to bottom,
@@ -72,11 +72,11 @@
     font-size: 20px;
   }
 
-  .h::after{
+  .h::after {
     display: none;
   }
 
-  .header_container{
+  .header_container {
     height: 60vh;
   }
 }
